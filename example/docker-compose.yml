@@ -1,0 +1,9 @@
+version: '3'
+services:
+  secret-app:
+    image: sapirc/secret-app:latest
+    container_name: secret-app
+    ports:
+        - "5000:5000"
+    volumes:
+        - /home/sapir/.aws:/root/.aws
